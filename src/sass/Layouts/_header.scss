@@ -2,10 +2,10 @@
     margin: 40px 90px;
     @include flexbox($justify:space-between);
     &__logo{
-        @extend %logo-nav-margin;
+        @extend %layout-margin;
     }
     &__nav{
-        @extend %logo-nav-margin;
+        @extend %layout-margin;
     }
     &__nav-link{
         margin: 25px;

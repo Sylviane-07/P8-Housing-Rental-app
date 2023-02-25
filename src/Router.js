@@ -11,7 +11,7 @@ RouterProvider,
 // import Footer from "./components/Footer";
 
 //Layouts
-import MainLayoutRoot from "./Layouts/mainLayoutRoot";
+import MainLayoutRoot from "./layouts/mainLayoutRoot";
 
 //pages
 import About from "./pages/About";

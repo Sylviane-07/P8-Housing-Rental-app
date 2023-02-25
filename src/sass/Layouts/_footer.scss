@@ -1,0 +1,16 @@
+.footer{
+    padding-bottom: 10px;
+    background-color: $footer-bg;
+    @include flexbox($direction: column);
+    gap: 20px;
+    &__logo{
+        @extend %layout-margin;
+        padding-top: 50px;
+    }
+    &__text{
+        @extend %layout-margin;
+        @extend %medium-size-text;
+        font-weight: 500;
+        color: $contrast-txt-color;
+    }
+}
