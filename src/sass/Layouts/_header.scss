@@ -12,7 +12,7 @@
         @extend %medium-size-text;
         font-weight: 500;
         color: $main-color;
-        &:hover{
+        &.active{
             text-decoration-line: underline;
         }
     }
