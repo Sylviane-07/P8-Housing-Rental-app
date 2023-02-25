@@ -3,11 +3,15 @@ import logo from "../assets/logo.png";
 
 function Header() {
   return (
-    <header>
-      <img src={logo} alt="Kasa logo" />
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A Propos</Link>
+    <header className="header">
+      <img className="header__logo" src={logo} alt="Kasa logo" />
+      <nav className="header__nav">
+        <Link className="header__nav-link" to="/">
+          Accueil
+        </Link>
+        <Link className="header__nav-link" to="/about">
+          A Propos
+        </Link>
       </nav>
     </header>
   );

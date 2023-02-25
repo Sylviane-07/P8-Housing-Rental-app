@@ -1,0 +1,19 @@
+.header{
+    margin: 40px 90px;
+    @include flexbox($justify:space-between);
+    &__logo{
+        @extend %logo-nav-margin;
+    }
+    &__nav{
+        @extend %logo-nav-margin;
+    }
+    &__nav-link{
+        margin: 25px;
+        @extend %medium-size-text;
+        font-weight: 500;
+        color: $main-color;
+        &:hover{
+            text-decoration-line: underline;
+        }
+    }
+}
