@@ -1,2 +1,7 @@
-@use "src/sass/Layouts/_header.scss" as *;
-@use "src/sass/Layouts/_footer.scss" as *;
+@import "src/sass/Base/_reset.scss";
+@import "src/sass/Base/_typography.scss";
+@import "src/sass/Base/_colors.scss";
+@import "src/sass/Utils/_mixins.scss";
+@import "src/sass/Utils/_placeholders.scss";
+@import "src/sass/Layouts/_header.scss";
+@import "src/sass/Layouts/_footer.scss";
