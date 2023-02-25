@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$base-font-family:'Montserrat', sans-serif;
+
+body{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $base-font-family;
+}
+
+//nav + description text size
+%medium-size-text{
+    font-size: clamp(0.6875rem, 0.4874rem + 1.1207vw, 1.5rem);
+}

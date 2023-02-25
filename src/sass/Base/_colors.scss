@@ -1,0 +1,17 @@
+$main-color: #FF6060;
+
+//cards gradient background during loading
+$cards-gradient: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+
+//sections background color
+$section-bg-color: #F6F6F6;
+
+//Host loading background color
+$host-bg-color: #C4C4C4;
+
+//empty stars color
+$empty-star-color: #E3E3E3;
