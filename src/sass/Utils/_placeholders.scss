@@ -1,4 +1,15 @@
-//HEADER => nav & logo margin
+//Main layout margin => HEADER - MAIN
+%main-layout-margin{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+//HEADER-FOOTER => nav & logo margin / logo & p margin
 %layout-margin{
     margin: 15px;
+}
+
+//banner background shade
+%banner-bg-shade{
+filter: brightness(60%);
 }

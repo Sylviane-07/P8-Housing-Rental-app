@@ -5,7 +5,9 @@ function Header() {
   return (
     <header className="header">
       <Link to="/">
+        <div className="header__logo-container">
         <img className="header__logo" src={logo} alt="Kasa logo" />
+        </div>
       </Link>
       <nav className="header__nav">
         <NavLink className="header__nav-link" to="/">

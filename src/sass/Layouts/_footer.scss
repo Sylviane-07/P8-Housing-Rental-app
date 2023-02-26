@@ -1,11 +1,10 @@
 .footer{
-    padding-bottom: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     background-color: $footer-bg;
     @include flexbox($direction: column);
-    gap: 20px;
     &__logo{
         @extend %layout-margin;
-        padding-top: 50px;
     }
     &__text{
         @extend %layout-margin;

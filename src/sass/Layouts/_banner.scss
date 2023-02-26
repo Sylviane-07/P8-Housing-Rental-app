@@ -1,0 +1,22 @@
+.header-banner{
+    margin-top: 16px;
+    height: 111px;
+    border-radius: 10px;
+    overflow: hidden;
+    @include flexbox();
+    @extend %main-layout-margin;
+    
+    &__img{
+        height: 111px;
+        object-fit: cover;
+        width: 100%;
+        @extend %banner-bg-shade;
+    }
+    &--text{
+        position: absolute;
+        font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
+        font-weight: 500;
+        left: 36px;
+        color: $contrast-txt-color;
+    }
+}

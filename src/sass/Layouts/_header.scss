@@ -1,14 +1,19 @@
 .header{
-    margin: 40px 90px;
+    @extend %main-layout-margin;
     @include flexbox($justify:space-between);
+    margin-top: 20px;
+    &__logo-container{
+        width: 145px;
+        height: 47px;
+    }
     &__logo{
-        @extend %layout-margin;
+
     }
     &__nav{
-        @extend %layout-margin;
+        @include flexbox;
+        gap: 10px;
     }
     &__nav-link{
-        margin: 25px;
         @extend %medium-size-text;
         font-weight: 500;
         color: $main-color;
