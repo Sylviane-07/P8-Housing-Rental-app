@@ -6,13 +6,13 @@ import Footer from "./Footer"
 
 function MainLayoutRoot() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

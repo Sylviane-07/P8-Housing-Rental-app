@@ -13,3 +13,9 @@
 %banner-bg-shade{
 filter: brightness(60%);
 }
+
+%banner-margin-radius-overflow{
+    margin-top: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+}

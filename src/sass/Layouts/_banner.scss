@@ -1,11 +1,9 @@
+// HOMEPAGE
 .header-banner{
-    margin-top: 16px;
     height: 111px;
-    border-radius: 10px;
-    overflow: hidden;
     @include flexbox();
+    @extend %banner-margin-radius-overflow;
     @extend %main-layout-margin;
-    
     &__img{
         height: 111px;
         object-fit: cover;
@@ -18,5 +16,18 @@
         font-weight: 500;
         left: 36px;
         color: $contrast-txt-color;
+    }
+}
+
+
+//ABOUT
+.about-banner{
+    height: 223px;
+    @include flexbox();
+    @extend %banner-margin-radius-overflow;
+    @extend %main-layout-margin;
+    &__img{
+        width: 100%;
+        @extend %banner-bg-shade;
     }
 }

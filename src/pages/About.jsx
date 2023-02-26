@@ -1,5 +1,11 @@
+import Banner from "../layouts/Banner";
+
 function About() {
-    return (<h1>About</h1>)
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
-export default About
+export default About;
