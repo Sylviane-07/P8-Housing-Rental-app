@@ -1,6 +1,6 @@
 //Banner IMG
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+//import { useEffect } from "react";
 
 //IMG
 import homepageBanner from "./../assets/Banner_M.png";
@@ -8,9 +8,9 @@ import aboutBanner from "./../assets/About_Banner_M.png";
 
 function Banner() {
   let location = useLocation();
-  useEffect(() => {
-    console.log(location.pathname);
-  }, [location]);
+  // useEffect(() => {
+  //   console.log(location.pathname);
+  // }, [location]);
   if (location.pathname === "/") {
     return (
       <div className="header-banner">

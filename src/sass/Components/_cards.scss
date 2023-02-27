@@ -1,0 +1,31 @@
+.homepage-cards{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    @extend %main-layout-margin;
+    &__item{
+        height: 255px;
+        @extend %banner-margin-radius-overflow;
+    }
+    &__img{
+        position: absolute; 
+        height: 255px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+  
+    }
+    &__title{
+        z-index: 1;
+        position: relative;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-bottom: 40px;
+        top: 76%;
+        font-weight: 500;
+        font-size: clamp(0.9375rem, 0.3849rem + 3.1579vw, 1.125rem);
+        color: $contrast-txt-color;
+        background: $cards-gradient; 
+
+    }
+}
