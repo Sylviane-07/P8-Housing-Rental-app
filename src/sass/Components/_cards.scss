@@ -1,8 +1,10 @@
-.homepage-cards{
+.cards-container{
     margin-top: 5px;
     margin-bottom: 20px;
     position: relative;
     @extend %main-layout-margin;
+}
+.card{
     &__item{
         height: 255px;
         @extend %banner-margin-radius-overflow;
