@@ -3,7 +3,6 @@
     height: 111px;
     @include flexbox();
     @extend %banner-margin-radius-overflow;
-    @extend %main-layout-margin;
     &__img{
         height: 111px;
         object-fit: cover;
@@ -22,10 +21,10 @@
 
 //ABOUT
 .about-banner{
+    margin-bottom: 10px;
     height: 223px;
     @include flexbox();
     @extend %banner-margin-radius-overflow;
-    @extend %main-layout-margin;
     &__img{
         width: 100%;
         @extend %banner-bg-shade;

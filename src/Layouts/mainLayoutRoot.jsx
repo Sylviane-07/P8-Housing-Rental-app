@@ -8,7 +8,7 @@ function MainLayoutRoot() {
   return (
     <>
       <Header />
-      <main>
+      <main className="section-container">
         <Outlet />
       </main>
       <Footer />

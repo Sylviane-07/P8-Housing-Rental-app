@@ -1,0 +1,16 @@
+.collapse{
+    &__container{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @include flexbox($direction: column);
+    }
+    &__btn{
+        width: 100%;
+        height: 30px;
+        background-color: $main-color;
+        color: $contrast-txt-color;
+        border-color: transparent;
+        border-radius: 5px;
+        @include flexbox($justify: space-between);
+    }
+}

@@ -1,0 +1,12 @@
+// ALL PAGES LAYOUT
+.section-container{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    @extend %main-layout-margin;
+}
+
+// ABOUT page layout
+.about-main{
+    margin-top: 15px;
+}

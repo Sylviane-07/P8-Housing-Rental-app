@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <>
       <Banner />
-      <section className="cards-container">
+      <section>
         {data.map(({ id, cover, title }) => (
           <Cards key={id} cover={cover} title={title} />
         ))}
