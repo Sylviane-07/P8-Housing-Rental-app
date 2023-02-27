@@ -6,8 +6,19 @@
 }
 .card{
     &__item{
+        position: relative;
         height: 255px;
         @extend %banner-margin-radius-overflow;
+            &::before{
+                z-index: 1;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 75%;
+                background: $cards-gradient;
+            }
     }
     &__img{
         position: absolute; 
@@ -15,19 +26,14 @@
         object-fit: cover;
         width: 100%;
         border-radius: 10px;
-  
     }
     &__title{
         z-index: 1;
         position: relative;
-        padding-left: 19px;
-        padding-right: 19px;
-        padding-bottom: 40px;
-        top: 76%;
+        padding: 10px 19px;
+        top: 75%;
         font-weight: 500;
         font-size: clamp(0.9375rem, 0.3849rem + 3.1579vw, 1.125rem);
         color: $contrast-txt-color;
-        background: $cards-gradient; 
-
     }
 }
