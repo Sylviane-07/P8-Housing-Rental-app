@@ -9,7 +9,7 @@ function Homepage() {
       <Banner />
       <section>
         {data.map(({ id, cover, title }) => (
-          <Cards key={id} cover={cover} title={title} />
+          <Cards key={id} cover={cover} title={title} id={id} />
         ))}
       </section>
     </>
