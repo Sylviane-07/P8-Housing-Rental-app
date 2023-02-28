@@ -6,9 +6,6 @@
         width: 145px;
         height: 47px;
     }
-    &__logo{
-
-    }
     &__nav{
         @include flexbox;
         gap: 10px;

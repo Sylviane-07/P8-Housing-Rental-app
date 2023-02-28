@@ -1,17 +1,22 @@
-import Collapase from "../components/Collapase";
 import Banner from "../layouts/Banner";
+import Collapase from "../components/Collapase";
+
+//DATA
+import data  from "../data/aboutPageDate";
 
 function About() {
   return (
     <>
       <Banner />
       <section className="about-main">
-        <Collapase
-          label={"Title"}
-          content={
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi ut commodi perferendis repellat minima sit expedita perspiciatis! A sed libero unde aspernatur quibusdam voluptatem assumenda dolor enim, facilis ut!"
-          }
-        />
+        {data.map(({id, label, content}) => (
+          <Collapase
+            key={id}
+            label={label}
+            content={content}
+          />
+        )
+        )}
       </section>
     </>
   );

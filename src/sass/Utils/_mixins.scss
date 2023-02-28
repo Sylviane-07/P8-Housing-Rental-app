@@ -5,3 +5,6 @@
     align-items: $align;
 }
 
+@mixin radius5{
+    border-radius: 5px;
+}
