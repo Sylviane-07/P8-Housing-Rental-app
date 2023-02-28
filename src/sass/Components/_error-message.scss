@@ -1,0 +1,26 @@
+.error-page{
+    height: 100vh;
+    @include flexbox($direction: column, $justify: space-around);
+    gap: 50px;
+    color: $main-color;
+    &__text-container{
+        margin-bottom: -100px;
+        @include flexbox($direction: column);
+    }
+    &__title{
+        font-size: clamp(6rem, 3.1034rem + 16.5517vw, 18rem);
+        font-weight: 700;
+    }
+    &__p{
+        text-align: center;
+        font-weight: 500;
+        font-size: clamp(1.125rem, 0.8534rem + 1.5517vw, 2.25rem);
+    }
+    &__link{
+        margin-bottom: 100px;
+        color: $main-color;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: clamp(0.875rem, 0.8147rem + 0.3448vw, 1.125rem);
+    }
+}

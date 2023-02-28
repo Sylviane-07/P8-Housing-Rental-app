@@ -1,5 +1,11 @@
+import ErrorMessage from "../components/ErrorMessage"
+
 function Error() {
-    return (<h1>Error</h1>)
+    return (
+      <>
+        <ErrorMessage />
+      </>
+    );
 }
 
 export default Error

@@ -19,10 +19,10 @@ function Banner() {
           src={homepageBanner}
           alt="Coast landscape"
         />
-        <p className="header-banner--text">
+        <h1 className="header-banner--text">
           Chez vous,
           <br /> partout et ailleurs
-        </p>
+        </h1>
       </div>
     );
   } else if (location.pathname === "/about") {
