@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Cards({ id, cover, title }) {
+  // dynamic page id path
   const path = `for-rent/${id}`
   return (
     <article key={id} className="card__item">

@@ -3,7 +3,11 @@ import ErrorMessage from "../components/ErrorMessage"
 function Error() {
     return (
       <>
-        <ErrorMessage />
+        <ErrorMessage
+          title={`404`}
+          p={<>Oups! La page que <br/> vous demandez n'existe pas.</>}
+          link={`Retourner sur la page d’accueil`}
+        />
       </>
     );
 }

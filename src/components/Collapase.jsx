@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 function Collapase({ label, content }) {
+  //Use useState to define collapse state to false (closed when loaded)
   const [open, setOPen] = useState(false);
+  //Set open with toggle function called onClick
   const toggle = () => {
     setOPen(!open);
   };

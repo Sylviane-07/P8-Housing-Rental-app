@@ -7,7 +7,8 @@ import homepageBanner from "./../assets/Banner_M.png";
 import aboutBanner from "./../assets/About_Banner_M.png";
 
 function Banner() {
-  let location = useLocation();
+  //target browser path with useLocation & useEffect to change Banner based on location.pathname
+  const location = useLocation();
   // useEffect(() => {
   //   console.log(location.pathname);
   // }, [location]);

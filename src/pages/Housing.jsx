@@ -1,13 +1,17 @@
+import { useParams } from "react-router-dom";
+//COMPONENTS
 import Slideshow from "./../components/Slideshow";
 import Property404 from "./../components/Property404"
-import { useParams } from "react-router-dom";
+//DATA import
 import propertyData from "./../data/data.json";
 
 function Housing() {
-  const { propertyId } = useParams();
-  const property = propertyData.find((property) => property.id === propertyId);
+    // ID from URL with useParams
+    const { propertyId } = useParams();
+    // Watch for matching for ID params & ID data
+    const property = propertyData.find((property) => property.id === propertyId);
 
-  console.log(property);
+    console.log(property);
     return !property ? (
       <Property404 />
     ) : (
