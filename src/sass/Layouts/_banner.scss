@@ -5,6 +5,7 @@
     @include flexbox();
     @extend %banner-margin-radius-overflow;
     &__img{
+        border-radius: 10px;
         height: 111px;
         object-fit: cover;
         width: 100%;
@@ -27,6 +28,7 @@
     @include flexbox();
     @extend %banner-margin-radius-overflow;
     &__img{
+        border-radius: 10px;
         width: 100%;
         @extend %banner-bg-shade;
     }
