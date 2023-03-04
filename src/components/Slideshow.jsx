@@ -19,6 +19,9 @@ function Slideshow({ pictures, title }) {
     setCurrentIndex(newIndex);
   };
 
+  const pictureId = `${currentIndex + 1}/${pictures.length}`
+  //console.log(pictureId)
+
   // const picStyles = {
   //   width: "100%",
   //   height: "100%",
@@ -46,7 +49,7 @@ function Slideshow({ pictures, title }) {
             src={pictures[currentIndex]}
             alt={title}
           />
-          <p className="Slideshow__bullets"></p>
+          <p className="Slideshow__bullets">{pictureId}</p>
           <button className="Slideshow__left-btn" onClick={handleLeftClick}>
             <i className="fa-solid fa-angle-left"></i>
           </button>

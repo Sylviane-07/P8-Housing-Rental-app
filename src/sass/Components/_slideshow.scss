@@ -22,9 +22,13 @@
         @extend %position-abs-top50;
         right: 0;
     }
-    // &__bullets{
-
-    // }
+    &__bullets{
+        position: absolute;
+        right: 50%;
+        bottom: 6.01%;
+        color: $contrast-txt-color;
+        @extend %medium-size-text;
+    }
 }
 
 //ARROW STYLE
