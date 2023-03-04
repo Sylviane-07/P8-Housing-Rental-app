@@ -1,4 +1,5 @@
 .card{
+    @include flexbox($direction: column, $align: unset);
     &__item{
         position: relative;
         height: 255px;
@@ -15,10 +16,7 @@
             }
     }
     &__img{
-        position: absolute; 
-        height: 255px;
-        object-fit: cover;
-        width: 100%;
+        @include card-img;
         border-radius: 10px;
     }
     &__title{

@@ -11,6 +11,7 @@ body{
 
 
 .section-container{
+    @include flexbox($direction: column, $justify: unset);
     min-height: calc(100vh - 256px);
     margin-top: 5px;
     margin-bottom: 20px;
