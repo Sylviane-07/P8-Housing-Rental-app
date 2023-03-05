@@ -15,6 +15,7 @@
         @include flexbox($justify: space-between);
     }
     &__text-container{
+        width: 100%;
         background-color: $section-bg-color;
         padding-top: 18px;
         padding-bottom: 50px;

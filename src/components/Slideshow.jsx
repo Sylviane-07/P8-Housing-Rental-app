@@ -22,15 +22,6 @@ function Slideshow({ pictures, title }) {
   const pictureId = `${currentIndex + 1}/${pictures.length}`
   //console.log(pictureId)
 
-  // const picStyles = {
-  //   width: "100%",
-  //   height: "100%",
-  //   borderRadius: "10px",
-  //   backgroundPosition: "center",
-  //   backgroundSize: "cover",
-  //   backgroundImage: `url(${pictures[currentIndex]})`,
-  // }
-
   if (pictures.length <= 1) {
     return (
       <>
@@ -43,7 +34,6 @@ function Slideshow({ pictures, title }) {
     return (
       <>
         <div className="Slideshow__container">
-          {/* <div style={picStyles}></div> */}
           <img
             className="Slideshow__img"
             src={pictures[currentIndex]}
