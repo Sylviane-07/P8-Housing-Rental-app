@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Collapase({ label, content }) {
+function Collapase({ label, content, list }) {
   //Use useState to define collapse state to false (closed when loaded)
   const [open, setOPen] = useState(false);
   //Set open with toggle function called onClick
@@ -20,7 +20,7 @@ function Collapase({ label, content }) {
       </button>
       {open && (
         <div className="collapse__text-container">
-          <p className="collapse__text">{content}</p>
+          <p className="collapse__text">{content}{list}</p>
         </div>
       )}
     </div>

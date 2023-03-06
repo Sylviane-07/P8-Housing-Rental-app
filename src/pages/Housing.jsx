@@ -26,29 +26,37 @@ function Housing() {
   ) : (
     <>
       <Slideshow pictures={property.pictures} />
-      <section className="housing-details">
-        <article>
-          <div>
-            <h1>{property.title}</h1>
-            <p>{property.location}</p>
+      <section className="housing-page">
+        <article className="housing-page__details-container">
+          <div className="housing-page__title-loc-tags-container">
+            <h1 className="housing-page__title">{property.title}</h1>
+            <p className="housing-page__location">{property.location}</p>
             {/* tags container */}
             <div className="tags__container">
-              {property.tags.map(( tag, index ) => (
+              {property.tags.map((tag, index) => (
                 <Tags key={index} tag={tag} />
               ))}
             </div>
           </div>
           {/* stars & host container */}
-          <div>
+          <div className="housing-page__rating-host-container">
             {/* stars container */}
             <StarsRating count={5} value={rating} />
             {/* host container */}
             <HostId name={property.host.name} picture={property.host.picture} />
           </div>
         </article>
-        <article>
+        <article className="housing-page__collapse-container">
           <Collapase label={`Description`} content={property.description} />
-          <Collapase label={`Équipements`} content={property.equipments} />
+
+          <Collapase
+            label={`Équipements`}
+            list={property.equipments.map((equipment, index) => (
+              <span className="housing-page__collapse-list" key={index}>
+                {equipment}
+              </span>
+            ))}
+          />
         </article>
       </section>
     </>
