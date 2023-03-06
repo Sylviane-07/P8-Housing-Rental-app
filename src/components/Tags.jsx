@@ -1,5 +1,9 @@
 function Tags({ tag }) {
-  return <p className="tags__item">{tag}</p>;
+  return (
+    <span className="tag">
+      <p className="tag__text">{tag}</p>
+    </span>
+  );
 }
 
 export default Tags;
