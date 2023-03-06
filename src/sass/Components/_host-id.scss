@@ -1,0 +1,16 @@
+.host-id{
+    @include flexbox;
+    &__name{
+        margin-right: 10px;
+        width: 60px;
+        text-align: right;
+        color: $main-color;
+        font-weight: 500;
+        font-size: clamp(0.745rem, 0.500rem + 1.0345vw, 1.5rem);
+    }
+    &__img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+}
