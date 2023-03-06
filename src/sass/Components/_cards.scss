@@ -1,4 +1,5 @@
 .card{
+    width: 100%;
     @include flexbox($direction: column, $align: unset);
     &__item{
         position: relative;

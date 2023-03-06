@@ -32,7 +32,7 @@ function Housing() {
             <h1 className="housing-page__title">{property.title}</h1>
             <p className="housing-page__location">{property.location}</p>
             {/* tags container */}
-            <div className="tags__container">
+            <div className="housing-page__tags-container">
               {property.tags.map((tag, index) => (
                 <Tags key={index} tag={tag} />
               ))}
@@ -48,9 +48,9 @@ function Housing() {
         </article>
         <article className="housing-page__collapse-container">
           <Collapase label={`Description`} content={property.description} />
-
           <Collapase
             label={`Équipements`}
+            //map in prop.list over property.equipments to return a list of each equipment in Collapse <p></p>
             list={property.equipments.map((equipment, index) => (
               <span className="housing-page__collapse-list" key={index}>
                 {equipment}

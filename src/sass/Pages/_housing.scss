@@ -1,6 +1,22 @@
 .housing-page{
     width: 100%;
+    &__title{
+        font-size: clamp(1.125rem, 0.8534rem + 1.5517vw, 2.25rem);
+        font-weight: 500;
+        color: $main-color;
+    }
+    &__location{
+        font-size: clamp(0.875rem, 0.8147rem + 0.3448vw, 1.125rem);
+        color: $main-color;
+    }
     &__collapse-list{
         display: block;
+    }
+    &__tags-container{
+        @include flexbox ($justify: flex-start);
+        flex-wrap: wrap;
+    }
+    &__rating-host-container{
+        @include flexbox ($justify: space-between);
     }
 }
