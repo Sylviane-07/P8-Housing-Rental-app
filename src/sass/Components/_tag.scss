@@ -1,0 +1,17 @@
+.tags{
+    &__container{
+        @include flexbox ($justify: flex-start)
+    }
+    &__item{
+        background-color: $main-color;
+        color: $contrast-txt-color;
+        font-size: clamp(0.625rem, 0.5647rem + 0.3448vw, 0.875rem);
+        margin: 10px 10px 10px 0;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 84px;
+        max-width: 115px;
+        padding-bottom: 0.158rem;
+        padding-top: 0.158rem;
+    }
+}
