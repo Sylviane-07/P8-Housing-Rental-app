@@ -25,14 +25,14 @@ function Banner() {
   if (location.pathname === "/") {
     return (
       <div className="header-banner">
-        <picture className="header-banner">
+        <picture className="header-banner__picture-container">
           <source
-            media="(max-width: 375px)"
+            media="(max-width: 425px)"
             srcSet={hpMobileBanner}
-            sizes="375px"
+            sizes="425px"
           />
           <source
-            media="(max-width: 768px)"
+            media="(min-width: 768px)"
             srcSet={hpDskBanner}
             sizes="768px"
           />
@@ -53,9 +53,9 @@ function Banner() {
       <div className="about-banner">
         <picture className="about-banner">
           <source
-            media="(max-width: 375px)"
+            media="(max-width: 376px)"
             srcSet={aboutMbBanner}
-            sizes="375px"
+            sizes="376px"
           />
           <source
             media="(max-width: 768px)"

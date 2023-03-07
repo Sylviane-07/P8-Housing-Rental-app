@@ -1,9 +1,13 @@
 // HOMEPAGE
 .header-banner{
-
+    height: 111px;
     width: 100%;
     @include flexbox();
     @extend %banner-margin-radius-overflow;
+    &__picture-container{
+        width: 100%;
+        @include flexbox();
+    }
     &__img{
         border-radius: 10px;
         height: 111px;
