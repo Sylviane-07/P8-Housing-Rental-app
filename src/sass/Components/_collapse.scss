@@ -13,6 +13,10 @@
         border-color: transparent;
         @include radius5;
         @include flexbox($justify: space-between);
+        @include desktop{
+            height: 50px;
+            font-size: clamp(0.8125rem, 0.5800rem + 0.9483vw, 1.5rem);
+        }
     }
     &__text-container{
         width: 100%;
