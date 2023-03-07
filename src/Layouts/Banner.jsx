@@ -44,7 +44,7 @@ function Banner() {
         </picture>
         <h1 className="header-banner--text">
           Chez vous,
-          <br /> partout et ailleurs
+          <br className="header-banner--text-br" /> partout et ailleurs
         </h1>
       </div>
     );

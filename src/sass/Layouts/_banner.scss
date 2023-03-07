@@ -4,6 +4,10 @@
     width: 100%;
     @include flexbox();
     @extend %banner-margin-radius-overflow;
+    @include desktop{
+        height: 223px;
+        margin-top: 60px;
+    }
     &__picture-container{
         width: 100%;
         @include flexbox();
@@ -14,6 +18,9 @@
         object-fit: cover;
         width: 100%;
         @extend %banner-bg-shade;
+        @include desktop{
+        height: 223px;
+    }
     }
     &--text{
         position: absolute;
@@ -21,6 +28,14 @@
         font-weight: 500;
         left: 18px;
         color: $contrast-txt-color;
+        @include desktop{
+            left: unset;
+        }
+    }
+    &--text-br{
+        @include desktop{
+            display: none;
+        }
     }
 }
 
@@ -31,6 +46,10 @@
     height: 223px;
     @include flexbox();
     @extend %banner-margin-radius-overflow;
+    @include desktop{
+        height: 223px;
+        margin-top: 40px;
+    }
     &__img{
         border-radius: 10px;
         width: 100%;
