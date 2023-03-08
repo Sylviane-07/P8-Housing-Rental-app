@@ -4,6 +4,9 @@
     padding-top: 50px;
     background-color: $footer-bg;
     @include flexbox($direction: column);
+    @include tablet{
+        margin-top: 60px;
+    }
     &__logo{
         @extend %layout-margin;
     }

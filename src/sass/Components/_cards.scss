@@ -1,6 +1,15 @@
 .card{
     width: 100%;
     @include flexbox($direction: column, $align: unset);
+    @include tablet{
+        border-radius: 25px;
+        background-color: $section-bg-color;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        padding: 50px;
+    }
     &__item{
         position: relative;
         height: 255px;
@@ -15,10 +24,18 @@
                 top: 75%;
                 background: $cards-gradient;
             }
+        @include tablet{
+            width: 100%;
+            height: 340px; 
+            justify-self: center;
+        }
     }
     &__img{
         @include card-img;
         border-radius: 10px;
+        @include tablet{
+            height: 340px;
+        }
     }
     &__title{
         z-index: 1;
@@ -28,5 +45,8 @@
         font-weight: 500;
         font-size: clamp(0.9375rem, 0.3849rem + 3.1579vw, 1.125rem);
         color: $contrast-txt-color;
+        @include tablet{
+            top: 80%;
+        }
     }
 }

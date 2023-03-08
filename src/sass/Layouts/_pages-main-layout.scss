@@ -17,6 +17,10 @@ body{
     margin-bottom: 20px;
     position: relative;
     @extend %main-layout-margin;
+    @include tablet{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     @include desktop{
         margin-left: 100px;
         margin-right: 100px;
