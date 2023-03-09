@@ -1,0 +1,12 @@
+.rating-stars{
+    margin: 0.156rem;
+    font-size: clamp(0.875rem, 0.5336rem + 1.3793vw, 1.875rem);
+    @include desktop{
+        margin: 0.313rem;
+    }
+    &__container{
+        @include tablet{
+            grid-row: 2;
+        }
+    }
+}

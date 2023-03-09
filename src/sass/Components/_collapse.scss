@@ -29,5 +29,8 @@
         padding: 0 10px;
         color: $main-color;
         font-size: clamp(0.745rem, 0.500rem + 1.0345vw, 1.5rem);
+        @include tablet{
+            padding: 0 20px;
+        }
     }
 }

@@ -9,18 +9,16 @@ function StarsRating({count, value}) {
   const inactiveColor = { color: `#E3E3E3` };
   const activeColor = { color: `#FF6060` };
   return (
-    <div>
-      {stars.map((star, index) =>{
+    <div className="rating-stars__container">
+      {stars.map((star, index) => {
         //console.log(value);
-        let starStyle = {}
+        let starStyle = {};
         //if index < to rating value => activeColor
         index < value ? (starStyle = activeColor) : (starStyle = inactiveColor);
         return (
-          <span
-            className="rating-stars"
-            key={index}
-            style={starStyle}
-          >{star}</span>
+          <span className="rating-stars" key={index} style={starStyle}>
+            {star}
+          </span>
         );
       })}
     </div>

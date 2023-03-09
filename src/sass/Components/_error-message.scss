@@ -16,6 +16,11 @@
         font-weight: 500;
         font-size: clamp(1.125rem, 0.8534rem + 1.5517vw, 2.25rem);
     }
+    &__br{
+        @include tablet{
+            display: none;
+        }
+    }
     &__link{
         margin-bottom: 100px;
         color: $main-color;

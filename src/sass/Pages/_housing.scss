@@ -16,6 +16,17 @@
         font-size: clamp(0.875rem, 0.8147rem + 0.3448vw, 1.125rem);
         color: $main-color;
     }
+    &__collapse-container{
+        @include tablet{
+            display: grid;
+            align-items: start;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 45px;
+        }
+        @include desktop{
+            gap: 76px;
+        }
+    }
     &__collapse-list{
         display: block;
     }
@@ -30,7 +41,10 @@
         margin: 15px 0;
         @include flexbox ($justify: space-between);
         @include tablet{
-            @include flexbox($direction: column-reverse);
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            justify-content: end;
+            align-items: start;
             gap: 24px;
         }
     }

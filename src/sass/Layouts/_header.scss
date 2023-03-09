@@ -17,6 +17,9 @@
     &__nav{
         @include flexbox;
         gap: 10px;
+        @include tablet{
+            gap: 57px;
+        }
     }
     &__nav-link{
         @extend %medium-size-text;

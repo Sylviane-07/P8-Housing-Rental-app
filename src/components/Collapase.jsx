@@ -20,7 +20,10 @@ function Collapase({ label, content, list }) {
       </button>
       {open && (
         <div className="collapse__text-container">
-          <p className="collapse__text">{content}{list}</p>
+          <p className="collapse__text">
+            {content}
+            {list}
+          </p>
         </div>
       )}
     </div>
