@@ -3,16 +3,25 @@
         margin-top: 30px;
         margin-bottom: 15px;
         border-radius: 10px;
-        background-color: aqua;
         overflow: hidden;
         position: relative;
         height: 255px;
         width: 100%;
-
+        @include tablet{
+            height: 315px;
+        }
+        @include desktop{
+            height: 415px;
+        }
     }
     &__img{
-        background-color: blueviolet;
         @include card-img;
+        @include tablet{
+            height: 315px;
+        }
+        @include desktop{
+            height: 415px;
+        }
     }
     &__left-btn{
         @extend %slider-btn-bg;

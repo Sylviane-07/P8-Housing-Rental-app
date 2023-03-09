@@ -2,15 +2,19 @@
     background-color: $main-color;
     margin: 10px 10px 5px 0;
     border-radius: 10px;
+    width: max-content;
     min-width: 84px;
-    max-width: 115px;
     padding: 0.158rem; 
     
     &__text{
-        margin-left: 0.158rem;
-        margin-right: 0.158rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         font-size: clamp(0.625rem, 0.5647rem + 0.3448vw, 0.875rem);
         color: $contrast-txt-color;
         text-align: center;
+        @include tablet{
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
     }
 }

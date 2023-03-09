@@ -1,16 +1,27 @@
 .host-id{
-    @include flexbox;
+    @include flexbox ($justify: flex-end);
+    @include tablet{
+        @include flexbox($align:flex-start);
+    }
     &__name{
-        margin-right: 10px;
-        width: 60px;
+        width: min-content;
         text-align: right;
         color: $main-color;
         font-weight: 500;
         font-size: clamp(0.745rem, 0.500rem + 1.0345vw, 1.5rem);
     }
     &__img{
+        margin-left: 10px;
         width: 32px;
         height: 32px;
         border-radius: 50%;
+        @include tablet{
+            width: 48px;
+            height: 48px;
+        }
+        @include desktop{
+            width: 64px;
+            height: 64px;
+        }
     }
 }
