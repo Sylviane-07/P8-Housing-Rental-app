@@ -15,12 +15,9 @@ function Housing() {
   const { propertyId } = useParams();
   // Watch for matching for ID params & ID data
   const property = propertyData.find((property) => property.id === propertyId);
-
-  //change rating value from string to number
-  const rating = property.rating * 1;
+ 
   //console.log(property);
-  //console.log(typeof rating);
-  //console.log(property.tags);
+ 
   return !property ? (
     <Property404 />
   ) : (
@@ -41,7 +38,7 @@ function Housing() {
           {/* stars & host container */}
           <div className="housing-page__rating-host-container">
             {/* stars container */}
-            <StarsRating count={5} value={rating} />
+            <StarsRating count={5} value={Number(property.rating)} />
             {/* host container */}
             <HostId name={property.host.name} picture={property.host.picture} />
           </div>
