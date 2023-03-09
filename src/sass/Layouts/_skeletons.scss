@@ -5,23 +5,14 @@
     &__card{
         background: $cards-gradient;
         background-color: $main-color;
-        height: 255px;
-        width: 335px;
-    }
-    //HOST profil pic skeleton
-    &__host-profil{
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background-color: #C4C4C4; 
     }
 }
 
-
-
-//Skeleton Animation
 @keyframes skeleton-loading {
-    50% {
-        opacity: .5;
+    0%{
+        background-color: hsla(0, 0%, 100%, 0);
+    }
+    100%{
+        background-color: hsla(0, 0%, 0%, 0.5);
     }
 }
