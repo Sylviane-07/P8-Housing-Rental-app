@@ -26,11 +26,17 @@
     &__left-btn{
         @extend %slider-btn-bg;
         @extend %position-abs-top50;
+        @include tablet{
+            top: 45%;
+        }
     }
     &__right-btn{
         @extend %slider-btn-bg;
         @extend %position-abs-top50;
         right: 0;
+        @include tablet{
+            top: 45%;
+        }
     }
     &__bullets{
         position: absolute;
@@ -45,4 +51,7 @@
 .fa-angle-right, .fa-angle-left{
     color: $contrast-txt-color;
     font-size: clamp(0.9375rem, 0.3849rem + 3.1579vw, 1.125rem);
+    @include tablet{
+        font-size: clamp(3.125rem, 0.9821rem + 4.4643vw, 5rem);
+    }
 }
