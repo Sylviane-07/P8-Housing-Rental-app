@@ -16,12 +16,7 @@
     }
     &__img{
         @include card-img;
-        @include tablet{
-            height: 315px;
-        }
-        @include desktop{
-            height: 415px;
-        }
+        height: 100%;
     }
     &__left-btn{
         @extend %slider-btn-bg;
