@@ -5,6 +5,7 @@
     @include flexbox();
     @extend %banner-margin-radius-overflow;
     @include tablet{
+        height: 223px;
         margin-bottom: 43px;
     }
     @include desktop{
@@ -17,10 +18,12 @@
     }
     &__img{
         border-radius: 10px;
-        height: 111px;
         object-fit: cover;
         width: 100%;
         @extend %banner-bg-shade;
+        @media screen and (max-width:375px){
+        height: 111px;
+    }
         @include desktop{
         height: 223px;
     }

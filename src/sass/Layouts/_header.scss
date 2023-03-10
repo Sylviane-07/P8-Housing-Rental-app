@@ -7,12 +7,18 @@
         margin-right: 50px;
     }
     @include desktop{
+        margin-top: 40px;
         margin-left: 100px;
         margin-right: 100px;
     }
     &__logo-container{
+        display: block;
         width: 145px;
         height: 47px;
+        @include tablet{
+            width: 210px;
+            height: 68px;
+        }
     }
     &__nav{
         @include flexbox;

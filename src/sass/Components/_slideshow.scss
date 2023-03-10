@@ -28,6 +28,7 @@
         @extend %position-abs-top50;
         @include tablet{
             top: 45%;
+            margin-left: 15px;
         }
     }
     &__right-btn{
@@ -36,6 +37,7 @@
         right: 0;
         @include tablet{
             top: 45%;
+            margin-right: 15px;
         }
     }
     &__bullets{
