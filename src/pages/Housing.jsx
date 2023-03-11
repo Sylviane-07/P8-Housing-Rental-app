@@ -1,11 +1,10 @@
 import { useParams } from "react-router-dom";
+//DATA import
+import propertyData from "./../data/data.json";
 //COMPONENTS
 import Slideshow from "./../components/Slideshow";
 import Property404 from "./../components/Property404";
 import Collapase from "../components/Collapase";
-
-//DATA import
-import propertyData from "./../data/data.json";
 import StarsRating from "../components/StarsRating";
 import HostId from "../components/HostId";
 import Tags from "../components/Tags";

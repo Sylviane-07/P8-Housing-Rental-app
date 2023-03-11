@@ -13,7 +13,7 @@ function Collapase({ label, content, list }) {
       <button className="collapse__btn" onClick={toggle}>
         {label}
         {open ? (
-          open && <i className="fa-solid fa-chevron-up"></i>
+           <i className="fa-solid fa-chevron-up"></i>
         ) : (
           <i className="fa-solid fa-chevron-down"></i>
         )}

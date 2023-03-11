@@ -1,6 +1,4 @@
-//Banner IMG
 import { useLocation } from "react-router-dom";
-//import { useEffect } from "react";
 
 //IMG
 import homepageBanner from "./../assets/Original_banner.png";
@@ -17,11 +15,10 @@ function Banner() {
   const aboutMbBanner = `${aboutBannerMobile} 335w`;
   const aboutDskBanner = `${aboutBanner} 1240w`;
 
-  //target browser path with useLocation & useEffect to change Banner based on location.pathname
+  //target browser path with useLocation to change Banner based on location.pathname
   const location = useLocation();
-  // useEffect(() => {
-  //   console.log(location.pathname);
-  // }, [location]);
+  //console.log(location.pathname)
+
   if (location.pathname === "/") {
     return (
       <div className="header-banner">

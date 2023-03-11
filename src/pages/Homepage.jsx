@@ -1,5 +1,6 @@
+//DATA
 import data from "./../data/data.json";
-
+//COMPONENT
 import Cards from "../components/Cards";
 import Banner from "../layouts/Banner";
 
