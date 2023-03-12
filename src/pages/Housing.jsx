@@ -43,15 +43,17 @@ function Housing() {
           </div>
         </article>
         <article className="housing-page__collapse-container">
-          <Collapase label={`Description`} content={property.description} />
+          <Collapase label="Description" content={property.description} />
           <Collapase
-            label={`Équipements`}
+            label="Équipements"
             //map in prop.list over property.equipments to return a list of each equipment in Collapse <p></p>
-            list={property.equipments.map((equipment, index) => (
-              <span className="housing-page__collapse-list" key={index}>
-                {equipment}
-              </span>
-            ))}
+            list={property.equipments && property.equipments.map(
+              (equipment, index) => (
+                <span className="housing-page__collapse-list" key={index}>
+                  {equipment}
+                </span>
+              )
+            )}
           />
         </article>
       </section>
