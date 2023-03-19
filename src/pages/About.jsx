@@ -1,4 +1,4 @@
-import Banner from "../layouts/Banner";
+import Banner from "../Layouts/Banner";
 import Collapase from "../components/Collapase";
 
 //DATA

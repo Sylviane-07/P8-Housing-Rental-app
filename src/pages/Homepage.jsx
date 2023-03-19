@@ -2,7 +2,7 @@
 import data from "./../data/data.json";
 //COMPONENT
 import Cards from "../components/Cards";
-import Banner from "../layouts/Banner";
+import Banner from "../Layouts/Banner";
 
 function Homepage() {
   return (

@@ -8,7 +8,7 @@ import {
 //components
 
 //Layouts
-import MainLayoutRoot from "./layouts/mainLayoutRoot";
+import MainLayoutRoot from "./Layouts/mainLayoutRoot";
 
 //pages
 import About from "./pages/About";
